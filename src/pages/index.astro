@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { css } from "../../styled-system/css";
+import { Image } from "astro:assets";
+import profileImage from "../assets/images/profile_square.webp";
+
+const defauleLayoutStyle = css({
+	py: "3rem",
+	display: "flex",
+	flexDirection: "column",
+	alignItems: "center",
+	flex: 1,
+	textAlign: "center",
+});
+
+---
+
+<Layout title="hayapo.dev">
+	<main class={defauleLayoutStyle}>
+		<Image
+		src={profileImage}
+		alt="hayapoが寝転んでいる"
+		width="250"
+		height="250"
+		class:list={[css({
+			borderRadius: '50%',
+			mb: "2rem"
+		})]}/>
+		<p class={css({fontFamily: "code", fontSize: "xxx-large", fontWeight: "bold"})}>hayapo / Hayato Saito</p>
+		<p class={css({fontFamily: "code", fontSize: "large"})}>Web developer @Tokyo</p>
+		<p class={css({fontFamily: "code", fontSize: "large"})}>JavaScrip/TypeScript engineer</p>
+		<!-- <div class={css({
+			display: "flex",
+			marginTop: "1rem",
+			justifyContent: "center",
+			alignItems: "center",
+			gap: "0.5rem"
+		})}>
+			<IconLink href=`https://github.com/hayapo` title="github" name="mdi:github" color={css({color: "gray"})} />
+			<IconLink href=`https://x.com/${TWITTER_ID}` title="twitter" name="mdi:twitter" color={css({color: "gray"})} />
+			<IconLink href=`https://mstdn.jp/@${MASTODON_ID}` title="mastodon" name="mdi:mastodon" color={css({color: "gray"})} />
+			<IconLink href=`https://bsky.app/profile/${BLUESKY_ID}` title="bluesky" name="ri:bluesky-fill" color={css({color: "gray"})} />
+			<IconLink href=`https://discordapp.com/users/${DISCORD_ID}` title="discord" name="ri:discord-fill" color={css({color: "gray"})} />
+			<IconLink href=`https://zenn.dev/${ZENN_ID}` title="zenn" name="simple-icons:zenn" color={css({color: "gray"})} isZenn/>
+		</div> -->
+	</main>
+</Layout>
