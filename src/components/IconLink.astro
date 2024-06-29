@@ -12,7 +12,7 @@ interface Props {
 }
 
 const ICON_SIZE = "3rem";
-const MOBILE_ICON_SIZE = "1.5rem";
+const MOBILE_ICON_SIZE = "2.5rem";
 
 const { href, title, name, size, color, isZenn } = Astro.props;
 const iconSize = size ?? ICON_SIZE;
@@ -20,21 +20,21 @@ const iconColor = color ?? css({color:"iconDefault"});
 ---
 
 <a
-  href={href}
-  title={`Link to ${title}`}
-  target="_blank"
-  rel="noopener noreferrer"
-  class:list={[
-    css({
-      _hover: {
-        filter: { base: "brightness(0.7)", _dark: "brightness(0.5)" },
-      },
-    }),
-  ]}
+	href={href}
+	title={`Link to ${title}`}
+	target="_blank"
+	rel="noopener noreferrer"
+	class:list={[
+		css({
+		_hover: {
+			filter: { base: "brightness(0.7)", _dark: "brightness(0.5)" },
+		},
+		}),
+	]}
 >
-		<Icon name={name} class:list={[css({
-			width: {base: isZenn ? "1rem" : MOBILE_ICON_SIZE, sm: isZenn ? "2rem" : iconSize},
-			height: {base: isZenn ? "1rem" : MOBILE_ICON_SIZE, sm: isZenn ? "2rem" : iconSize},
-			}), iconColor]}
-		/>
+	<Icon name={name} class:list={[css({
+		width: {base:  isZenn? "1.5rem" : MOBILE_ICON_SIZE, sm: isZenn ? "2rem" : iconSize},
+		height: {base: isZenn ? "1.5rem" : MOBILE_ICON_SIZE, sm: isZenn ? "2rem" : iconSize},
+		}), iconColor]}
+	/>
 </a>

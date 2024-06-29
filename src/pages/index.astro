@@ -4,7 +4,6 @@ import { css } from "../../styled-system/css";
 import { Image } from "astro:assets";
 import profileImage from "../assets/images/profile_square.webp";
 import IconLink from "../components/IconLink.astro";
-import { Icon } from "astro-icon/components";
 import { socials } from "../lib/consts"
 
 const defauleLayoutStyle = css({
@@ -39,7 +38,7 @@ const blogLinkURL = import.meta.env.PROD ? "/blog" : "https://hayapo.dev/blog";
 			marginTop: "1rem",
 			justifyContent: "center",
 			alignItems: "center",
-			gap: "0.5rem"
+			gap: ".8rem"
 		})}>
 			<IconLink href={blogLinkURL} title="blog" name="la:blog" color={css({color: "gray"})} />
 			<IconLink href=`https://github.com/${socials.github}` title="github" name="mdi:github" color={css({color: "gray"})} />
