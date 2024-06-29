@@ -1,33 +1,36 @@
 {
-  "name": "hayapo.dev",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "prepare": "panda codegen",
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/check": "^0.7.0",
-    "@astrojs/preact": "^3.5.0",
-    "@types/node": "^20.14.8",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "astro": "^4.11.0",
-    "astro-icon": "^1.1.0",
-    "postcss": "^8.4.38",
-    "preact": "^10.22.0",
-    "typescript": "^5.5.2"
-  },
-  "devDependencies": {
-    "@iconify-json/icomoon-free": "^1.1.8",
-    "@iconify-json/la": "^1.1.8",
-    "@iconify-json/mdi": "^1.1.67",
-    "@iconify-json/ri": "^1.1.21",
-    "@iconify-json/simple-icons": "^1.1.107",
-    "@pandacss/dev": "^0.41.0"
-  }
+	"name": "hayapo.dev",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"prepare": "panda codegen",
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"format": "biome format --write ./src",
+		"lint": "biome lint ./src"
+	},
+	"dependencies": {
+		"@astrojs/check": "^0.7.0",
+		"@astrojs/preact": "^3.5.0",
+		"@types/node": "^20.14.8",
+		"@types/react": "^18.3.3",
+		"@types/react-dom": "^18.3.0",
+		"astro": "^4.11.0",
+		"astro-icon": "^1.1.0",
+		"postcss": "^8.4.38",
+		"preact": "^10.22.0",
+		"typescript": "^5.5.2"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.8.3",
+		"@iconify-json/icomoon-free": "^1.1.8",
+		"@iconify-json/la": "^1.1.8",
+		"@iconify-json/mdi": "^1.1.67",
+		"@iconify-json/ri": "^1.1.21",
+		"@iconify-json/simple-icons": "^1.1.107",
+		"@pandacss/dev": "^0.41.0"
+	}
 }
