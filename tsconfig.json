@@ -5,6 +5,6 @@
 		"jsx": "react-jsx",
 		"jsxImportSource": "preact"
 	},
-	"include":  ["src/**/*", "styled-system"],
+	"include": ["src/**/*", "styled-system"],
 	"exclude": ["dist"]
 }

@@ -1,10 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { css } from "../../styled-system/css";
 import { Image } from "astro:assets";
+import { css } from "../../styled-system/css";
 import profileImage from "../assets/images/profile_square.webp";
 import IconLink from "../components/IconLink.astro";
-import { socials } from "../lib/consts"
+import Layout from "../layouts/Layout.astro";
+import { socials } from "../lib/consts";
 
 const defauleLayoutStyle = css({
 	py: "3rem",
@@ -16,7 +16,6 @@ const defauleLayoutStyle = css({
 });
 
 const blogLinkURL = import.meta.env.PROD ? "/blog" : "https://hayapo.dev/blog";
-
 ---
 
 <Layout title="hayapo.dev">
