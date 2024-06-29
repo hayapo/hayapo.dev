@@ -13,7 +13,9 @@ export default defineConfig({
 			include: {
 				mdi: ["twitter", "github", "rss-box", "chevron-left", "chevron-right", "mastodon"],
 				ri: ["bluesky-fill", "discord-fill"],
-				"simple-icons": ["zenn", "hatenabookmark"]
+				"simple-icons": ["zenn", "hatenabookmark"],
+				"icomoon-free": ["blog"],
+				la: ["blog"]
 			}
 		})
 	],

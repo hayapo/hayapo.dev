@@ -23,6 +23,11 @@
     "typescript": "^5.5.2"
   },
   "devDependencies": {
+    "@iconify-json/icomoon-free": "^1.1.8",
+    "@iconify-json/la": "^1.1.8",
+    "@iconify-json/mdi": "^1.1.67",
+    "@iconify-json/ri": "^1.1.21",
+    "@iconify-json/simple-icons": "^1.1.107",
     "@pandacss/dev": "^0.41.0"
   }
 }
